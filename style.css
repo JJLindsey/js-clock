@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+* {
+    box-sizing:border-box;
+}
+
+:root {
+    --primary: #000;
+    --secondary: #FFF;
+}
+
+html {
+    transition: all 0.5s ease-in;
+}
+
+html.dark {
+    --primary: #FFF;
+    --secondary:rgb(26, 26, 26);
+}
+
+html.dark {
+    background-color: #111;
+    color: var(--primary)
+}
+
+body {
+    font-family: 'Gowun Dodum', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin:0;
+}
+
+.toggle {
+    background-color: var(--primary);
+    color:var(--secondary);
+    border-radius: 5px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 100px;
+    cursor: pointer;
+}
+
+.toggle:focus {
+    outline: none;
+}
+
+.clock-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clock {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(240, 222, 33);
+}
+
+.hand {
+    background-color: var(--primary);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 65px;
+    width: 2px;
+    transform-origin: bottom center;
+}
+
+.hand.hour {
+    transform:translate(-50%, -100%) rotate(0deg);
+}
+
+.hand.minute {
+    transform:translate(-50%, -100%) rotate(0deg);
+    height: 100px;
+}
+
+.hand.sec {
+    transform:translate(-50%, -100%) rotate(0deg);
+    height: 100px;
+    background-color: red;
+}
