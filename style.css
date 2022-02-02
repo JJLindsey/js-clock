@@ -80,7 +80,7 @@ body {
     height: 100px;
 }
 
-.hand.sec {
+.hand.seconds {
     transform:translate(-50%, -100%) rotate(0deg);
     height: 100px;
     background-color: red;
