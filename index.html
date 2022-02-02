@@ -4,16 +4,26 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>JS Clock</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+        <button class="toggle">Dark Mode</button>
+
+        <div class="clock-container">
+            <div class="clock">
+                <div class="hand-hour"></div>
+                <div class="hand-minute"></div>
+                <div class="hand-sec"></div>
+                <div class="center"></div>
+            </div>
         
-        <script src="" async defer></script>
+            <div class="time">12:00</div>
+            <div class="date">Monday, Jan <span class="circle"></span></div>
+        </div>
+        
+        <script src="script.js"></script>
     </body>
 </html>
